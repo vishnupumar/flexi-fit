@@ -28,9 +28,9 @@ export const Exercise = () => {
         exerciseOptions
       );
       setSingleData(exerciseRes);
-
+        console.log(exerciseRes)
       const exerciseVideosRes = await fetchData(
-        `https://simple-youtube-search.p.rapidapi.com/search?query=${exerciseRes.name}`,
+        `https://simple-youtube-search.p.rapidapi.com/search?query=${exerciseRes.name}&safesearch=false`,
         exerciseVideosOptions
       );
       setExerciseVideos(exerciseVideosRes.results);
