@@ -1,0 +1,25 @@
+.exercise-videos-container>.exercise-videos{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    gap: 10px;
+    margin: 50px 5px;
+}
+
+.exercise-videos-container>.exercise-videos>a{
+    width: 300px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+.exercise-videos-container>.exercise-videos>a>.video-time{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 2px;
+    font-size: 0.8rem;
+}
+

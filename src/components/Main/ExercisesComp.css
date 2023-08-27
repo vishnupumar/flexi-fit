@@ -1,0 +1,56 @@
+.exercises-container>.exercises-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .exercises-container>.exercise-heading{
+    font-size: 1.2rem;
+    margin: 70px 50px 40px 50px;
+  }
+.exercises-container>.exercises-list>a{
+    text-decoration: none;
+    color: #000;
+}
+.exercises-container>.exercises-list>a>.exercise-card>.targetBtn{
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d35a5a;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.exercises-container>.exercises-list>a>.exercise-card:hover{
+  scale: 1.1;
+  transition: 0.8s;
+}
+.exercises-container>.exercises-list>a>.exercise-card>.bodypartBtn{
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #5a76d3;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.exercises-container>.page-numbers-div{
+    text-align: center;
+    margin: 40px;
+}
+.exercises-container>.page-numbers-div>button{
+    padding: 8px 12px;
+    background-color: rgb(182, 192, 201);
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+}
+
+@media (max-width:450px){
+    .exercises-container>.exercise-heading{
+        font-size: 1rem;
+        margin: 70px 30px 30px 30px;
+      }
+}

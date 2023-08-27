@@ -1,0 +1,25 @@
+.horizontal-scroll{
+    display: flex;
+    overflow: scroll;
+}
+.horizontal-scroll>.bodyparts-card{
+    text-align: center;
+    padding: 60px 0;
+    box-shadow: 1px 1px 10px 1px rgb(233, 231, 231);
+    margin: 10px;
+    cursor: pointer;
+}
+.horizontal-scroll>.bodyparts-card:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+.horizontal-scroll>.active{
+    border-top: 2px solid rgb(236, 50, 50);
+}
+.horizontal-scroll>.bodyparts-card>svg{
+    padding: 0 80px;
+    margin-bottom: 0;
+}
+.horizontal-scroll>.bodyparts-card>h3{
+    margin: 0;
+}

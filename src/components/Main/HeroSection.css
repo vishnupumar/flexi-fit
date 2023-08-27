@@ -1,0 +1,107 @@
+.hero-container{
+    display: flex;
+    height: 90vh;
+}
+.hero-search-heading{
+    text-align:center;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+.hero-container>.hero-left{
+    margin: 10% 20% 50% 10%;
+}
+.hero-container>.hero-left>h3{
+    color:rgb(231, 27, 27);
+}
+.hero-container>.hero-left>button{
+    padding: 12px 16px;
+    background-color: rgb(231, 27, 27);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.hero-container>.hero-left>button:hover{
+    background-color: rgb(190, 25, 25);
+}
+.hero-container>.hero-right{
+    position: absolute;
+    right: 150px;
+    top: 0;
+}
+.hero-container>.hero-middle{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    font-size: 5rem;
+    color: #dd3333;
+    opacity: 0.5;
+}
+.hero-container>.hero-middle>h1{
+    margin: 0;
+    padding: 0;
+}
+.hero-container>.hero-right>img{
+    border-radius: 0 80px 10px 80px;
+}
+.search-box{
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+}
+
+.search-box>input{
+    flex-grow:1;
+    height: 40px;
+    border: 1px solid rgb(231, 227, 227);
+    border-radius: 20px 0 0 20px;
+    padding-left: 24px;
+    box-shadow: 1px 1px 10px 1px rgb(233, 231, 231);
+    font-size: 1.2rem;
+}
+.search-box>button{
+    flex-grow: 0;
+    background-color: rgb(236, 50, 50);
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgb(233, 231, 231);
+}
+.search-box>button:hover{
+    background-color: rgb(187, 39, 39);
+    color: #fff;
+}
+.search-box>button:focus{
+    outline: 1px solid #c0bcbc;
+    background-color: rgb(184, 52, 52);
+}
+.search-box>input:focus{
+    outline: 1px solid rgb(27, 69, 160);
+}
+
+@media (max-width:450px) {
+    .search-box>input{
+        width: 100%;
+    }
+    .hero-search-heading{
+        font-size: 1rem;
+    }
+}
+@media (max-width:1080px){
+    .hero-container>.hero-right>img{
+        display: none;
+    }
+    .hero-container>.hero-middle{
+        display: none;
+    }
+    
+    .hero-container>.hero-left{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .hero-container{
+        height: 60vh;
+    }
+}
+

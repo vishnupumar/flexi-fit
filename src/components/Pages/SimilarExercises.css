@@ -1,0 +1,32 @@
+.similar-exercises{
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.similar-exercises>a>.exercise-card:hover{
+    scale: 1.1;
+  transition: 0.8s;
+}
+.similar-exercises>a{
+    text-decoration: none;
+    color: #000;
+}
+.similar-exercises>a>.exercise-card>.bodypartBtn{
+    padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #5a76d3;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.similar-exercises>a>.exercise-card>.targetBtn{
+    padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d35a5a;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}

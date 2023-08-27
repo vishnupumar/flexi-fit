@@ -1,0 +1,52 @@
+.singleData-container{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+}
+.red{
+    color: rgb(231, 27, 27);
+}
+.singleData-container>div{
+    margin-top: 50px;
+    width: 50%;
+}
+.singleData-container>div>p>svg{
+    width: 30px;
+    padding: 5px 10px;
+    background-color: rgb(231, 176, 176);
+    border-radius: 50%;
+}
+.singleData-container>div>.singleData-icon>p{
+    font-weight: 600;
+}
+.singleData-container>div>p{
+    display: flex;
+    gap: 15px;
+}
+.singleData-container>div>.singleData-para{
+    margin: 50px 0;
+    width: 50%;
+    font-size: 0.9rem;
+    
+}
+.singleData-container>img{
+    width: 50%;
+}
+
+@media (max-width:620px){
+    .singleData-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .singleData-container>img{
+        width: 100%;
+    }
+    .singleData-container>div{
+        width: 100%;
+    }
+    .singleData-container>div>.singleData-para{
+        margin: 50px 0;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
