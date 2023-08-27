@@ -15,7 +15,7 @@ export const SimilarExercises = ({ similarEx, name }) => {
               <div
                 className="exercise-card"
                 style={{
-                  width: "20rem",
+                  width: "15rem",
                   margin: "10px",
                   borderTop: "2px solid rgb(236, 50, 50)",
                 }}
@@ -23,7 +23,7 @@ export const SimilarExercises = ({ similarEx, name }) => {
                 <img src={ele.gifUrl} width={"100%"} alt={"exercise"} />
                 <button className="targetBtn">{ele.target}</button>
                 <button className="bodypartBtn">{ele.bodyPart}</button>
-                <h3>{ele.name}</h3>
+                <h3>{ele.name.slice(0,30)}</h3>
               </div>
             </Link>
           );

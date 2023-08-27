@@ -1,6 +1,9 @@
 .horizontal-scroll{
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
+}
+.horizontal-scroll::-webkit-scrollbar{
+    display: none;
 }
 .horizontal-scroll>.bodyparts-card{
     text-align: center;
